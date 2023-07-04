@@ -18,7 +18,7 @@ async def get_tasks():
 
 @app.post("/api/tasks")
 async def create_task():
-    pass
+    return "Post task"
 
 @app.put("/api/tasks/{id}")
 async def update_task():

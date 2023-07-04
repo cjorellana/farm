@@ -11,20 +11,19 @@ def welcome():
 async def get_task():
     return "all task"
 
-@app.get(f"/api/tasks/{id}")
-async def get_task2():
+#@app.get(f'/api/tasks/{id}')
+@app.get("/api/tasks/{id}")
+async def get_tasks():
     return "single task"
 
 @app.post("/api/tasks")
 async def create_task():
     pass
 
-
-
-@app.put(f"/api/tasks/{id}")
+@app.put("/api/tasks/{id}")
 async def update_task():
     pass
 
-@app.delete(f"/api/tasks/{id}")
+@app.delete("/api/tasks/{id}")
 async def delete_task():
     pass
